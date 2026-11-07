@@ -2,14 +2,14 @@
 
 Landing estática. Todo el sitio está en `public/`.
 
-## Deploy en Cloudflare Pages
+## Deploy en Cloudflare Workers
+
+El dominio `livekawsay.com` está conectado al Worker `livekawsay-com`. Desde la raíz del proyecto:
 
     npx wrangler login
-    npx wrangler pages deploy ./public --project-name livekawsay
+    npx wrangler deploy
 
-O desde el dashboard: Workers & Pages → Create → Pages → Upload assets → subir `public/`.
-
-Dominio: en el proyecto de Pages → Custom domains → `livekawsay.com` y `www.livekawsay.com`.
+No usar `wrangler pages deploy`: publica en el proyecto de Pages `livekawsay`, que no sirve el dominio.
 
 ## Pendiente
 - Reemplazar placeholders entre [corchetes] (precio, duración, WhatsApp, fotos).
