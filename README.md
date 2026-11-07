@@ -11,6 +11,8 @@ El dominio `livekawsay.com` está conectado al Worker `livekawsay-com`. Desde la
 
 No usar `wrangler pages deploy`: publica en el proyecto de Pages `livekawsay`, que no sirve el dominio.
 
+Para ver qué versión está publicada: `npx wrangler deployments list`.
+
 ## Pendiente
 - Reemplazar placeholders entre [corchetes] (precio, duración, WhatsApp, fotos).
 - Conectar el formulario de correo (Formspree / Worker / Google Sheets).
